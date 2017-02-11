@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D11F4B91E4F9CFF00C6AC1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4B81E4F9CFF00C6AC1F /* main.m */; };
+		0D11F4BC1E4F9CFF00C6AC1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4BB1E4F9CFF00C6AC1F /* AppDelegate.m */; };
+		0D11F4C41E4F9CFF00C6AC1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D11F4C31E4F9CFF00C6AC1F /* Assets.xcassets */; };
+		0D11F4C71E4F9CFF00C6AC1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D11F4C51E4F9CFF00C6AC1F /* LaunchScreen.storyboard */; };
+		9620A20E22561920ED175364 /* libPods-Brastlewark-Objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E5C1339CB8EC91840ACDCA /* libPods-Brastlewark-Objc.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D11F4B41E4F9CFF00C6AC1F /* Brastlewark-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brastlewark-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D11F4B81E4F9CFF00C6AC1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D11F4BA1E4F9CFF00C6AC1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D11F4BB1E4F9CFF00C6AC1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0D11F4C31E4F9CFF00C6AC1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D11F4C61E4F9CFF00C6AC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D11F4C81E4F9CFF00C6AC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72951A4C2D50DF7C6B96DACA /* Pods-Brastlewark-Objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-Objc.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brastlewark-Objc/Pods-Brastlewark-Objc.release.xcconfig"; sourceTree = "<group>"; };
+		CD5236090F996D3D755177B0 /* Pods-Brastlewark-Objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-Objc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brastlewark-Objc/Pods-Brastlewark-Objc.debug.xcconfig"; sourceTree = "<group>"; };
+		E4E5C1339CB8EC91840ACDCA /* libPods-Brastlewark-Objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brastlewark-Objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D11F4B11E4F9CFF00C6AC1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9620A20E22561920ED175364 /* libPods-Brastlewark-Objc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D11F4AB1E4F9CFF00C6AC1F = {
+			isa = PBXGroup;
+			children = (
+				0D11F4B61E4F9CFF00C6AC1F /* Brastlewark-Objc */,
+				0D11F4B71E4F9CFF00C6AC1F /* Supporting Files */,
+				0D11F4B51E4F9CFF00C6AC1F /* Products */,
+				49410EA929CCC1E230DA48D3 /* Pods */,
+				F1BF606B565C7E33D893D4A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D11F4B51E4F9CFF00C6AC1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4B41E4F9CFF00C6AC1F /* Brastlewark-Objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D11F4B61E4F9CFF00C6AC1F /* Brastlewark-Objc */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4D11E4F9DD700C6AC1F /* Models */,
+				0D11F4CF1E4F9DC300C6AC1F /* Resources */,
+				0D11F4CE1E4F9DA400C6AC1F /* ViewControllers */,
+				0D11F4BA1E4F9CFF00C6AC1F /* AppDelegate.h */,
+				0D11F4BB1E4F9CFF00C6AC1F /* AppDelegate.m */,
+			);
+			path = "Brastlewark-Objc";
+			sourceTree = "<group>";
+		};
+		0D11F4B71E4F9CFF00C6AC1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4C81E4F9CFF00C6AC1F /* Info.plist */,
+				0D11F4B81E4F9CFF00C6AC1F /* main.m */,
+			);
+			name = "Supporting Files";
+			path = "Brastlewark-Objc/Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D11F4CE1E4F9DA400C6AC1F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0D11F4CF1E4F9DC300C6AC1F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4D01E4F9DCB00C6AC1F /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0D11F4D01E4F9DCB00C6AC1F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4C31E4F9CFF00C6AC1F /* Assets.xcassets */,
+				0D11F4C51E4F9CFF00C6AC1F /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0D11F4D11E4F9DD700C6AC1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49410EA929CCC1E230DA48D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD5236090F996D3D755177B0 /* Pods-Brastlewark-Objc.debug.xcconfig */,
+				72951A4C2D50DF7C6B96DACA /* Pods-Brastlewark-Objc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1BF606B565C7E33D893D4A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4E5C1339CB8EC91840ACDCA /* libPods-Brastlewark-Objc.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D11F4B31E4F9CFF00C6AC1F /* Brastlewark-Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D11F4CB1E4F9CFF00C6AC1F /* Build configuration list for PBXNativeTarget "Brastlewark-Objc" */;
+			buildPhases = (
+				E7A4ACDA3F1C13E3FC19C566 /* [CP] Check Pods Manifest.lock */,
+				0D11F4B01E4F9CFF00C6AC1F /* Sources */,
+				0D11F4B11E4F9CFF00C6AC1F /* Frameworks */,
+				0D11F4B21E4F9CFF00C6AC1F /* Resources */,
+				0AEFAC68D07DA0D7D4B167FC /* [CP] Embed Pods Frameworks */,
+				EC4F4013EAAFA2FD0E5B0B6C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brastlewark-Objc";
+			productName = "Brastlewark-Objc";
+			productReference = 0D11F4B41E4F9CFF00C6AC1F /* Brastlewark-Objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D11F4AC1E4F9CFF00C6AC1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Abel Osorio";
+				TargetAttributes = {
+					0D11F4B31E4F9CFF00C6AC1F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6FWWP4MAGN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0D11F4AF1E4F9CFF00C6AC1F /* Build configuration list for PBXProject "Brastlewark-Objc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D11F4AB1E4F9CFF00C6AC1F;
+			productRefGroup = 0D11F4B51E4F9CFF00C6AC1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D11F4B31E4F9CFF00C6AC1F /* Brastlewark-Objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D11F4B21E4F9CFF00C6AC1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D11F4C71E4F9CFF00C6AC1F /* LaunchScreen.storyboard in Resources */,
+				0D11F4C41E4F9CFF00C6AC1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AEFAC68D07DA0D7D4B167FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brastlewark-Objc/Pods-Brastlewark-Objc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7A4ACDA3F1C13E3FC19C566 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4F4013EAAFA2FD0E5B0B6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brastlewark-Objc/Pods-Brastlewark-Objc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D11F4B01E4F9CFF00C6AC1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D11F4BC1E4F9CFF00C6AC1F /* AppDelegate.m in Sources */,
+				0D11F4B91E4F9CFF00C6AC1F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0D11F4C51E4F9CFF00C6AC1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D11F4C61E4F9CFF00C6AC1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D11F4C91E4F9CFF00C6AC1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0D11F4CA1E4F9CFF00C6AC1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D11F4CC1E4F9CFF00C6AC1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5236090F996D3D755177B0 /* Pods-Brastlewark-Objc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6FWWP4MAGN;
+				INFOPLIST_FILE = "Brastlewark-Objc/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osorioabel.Brastlewark-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0D11F4CD1E4F9CFF00C6AC1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72951A4C2D50DF7C6B96DACA /* Pods-Brastlewark-Objc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6FWWP4MAGN;
+				INFOPLIST_FILE = "Brastlewark-Objc/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osorioabel.Brastlewark-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D11F4AF1E4F9CFF00C6AC1F /* Build configuration list for PBXProject "Brastlewark-Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D11F4C91E4F9CFF00C6AC1F /* Debug */,
+				0D11F4CA1E4F9CFF00C6AC1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D11F4CB1E4F9CFF00C6AC1F /* Build configuration list for PBXNativeTarget "Brastlewark-Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D11F4CC1E4F9CFF00C6AC1F /* Debug */,
+				0D11F4CD1E4F9CFF00C6AC1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D11F4AC1E4F9CFF00C6AC1F /* Project object */;
+}
