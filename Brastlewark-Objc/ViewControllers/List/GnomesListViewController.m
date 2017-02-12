@@ -67,7 +67,7 @@
 	self.searchController.searchResultsUpdater = self;
 	self.searchController.dimsBackgroundDuringPresentation = NO;
 	self.searchController.hidesNavigationBarDuringPresentation = NO;
-	self.searchController.searchBar.placeholder = @"Search here...";
+	self.searchController.searchBar.placeholder = @"Type the name of the gnome";
 	self.searchController.searchBar.delegate = self;
 	self.definesPresentationContext = YES;
 	[self.searchController.searchBar sizeToFit];
