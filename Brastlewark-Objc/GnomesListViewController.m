@@ -40,7 +40,7 @@
 	self.tableView.delegate = self;
 	self.tableView.dataSource = self;
 	self.tableView.rowHeight = 263;
-	
+	self.tableView.backgroundColor = [UIColor blackColor];
 	[self bindViewModel];
 }
 
