@@ -146,7 +146,7 @@
 {
 	NSString *text = self.viewModel.shouldDisplaySearchResults ? @"NO RESULTS" : @"";
 	
-	NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18.0f],
+	NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:24.0f],
 								 NSForegroundColorAttributeName: [UIColor whiteColor]};
 	
 	return [[NSAttributedString alloc] initWithString:text attributes:attributes];
