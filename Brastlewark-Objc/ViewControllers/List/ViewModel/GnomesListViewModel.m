@@ -14,6 +14,7 @@
 @interface GnomesListViewModel ()
 
 @property (nonatomic, strong) NSArray *gnomes;
+@property (nonatomic, strong) NSArray *searchResults;
 
 @end
 
@@ -26,29 +27,37 @@
 	if (!self) return nil;
 	
 	RAC(self, gnomes) = [[GnomesAPI fetchGnomes] startWith:@[]];
-	
+	self.shouldDisplaySearchResults = NO;
 	_hasUpdatedContent = [RACObserve(self, gnomes) mapReplace:@(YES)];
 
 	return self;
 }
-
--(void)goToGnomeDetail:(Gnome*)gnome{
-		
-}
-
-- (NSString *)title{
-	return @"Gnomes";
-}
-
 - (NSUInteger)numberOfGnomesInSection:(NSInteger)section{
+	if (self.shouldDisplaySearchResults){
+		return self.searchResults.count;
+	}
 	return self.gnomes.count;
 }
 
 - (Gnome *)gnomeAtIndexPath:(NSIndexPath *)indexPath {
+	if (self.shouldDisplaySearchResults){
+		return self.searchResults[indexPath.row];
+	}
 	return self.gnomes[indexPath.row];
 }
 
 - (void)showDetailOfGnome:(Gnome *)gnome{
 	[self.delegate showDetailOfGnome:gnome];
+}
+
+- (void)filterGnomesWithQuery:(NSString*)query{
+	NSArray* filteredGnomes = [NSArray array];
+	NSArray* searchableArray = self.gnomes;
+	NSPredicate *resultPredicate = [NSPredicate
+									predicateWithFormat:@"SELF.name contains[cd] %@",
+									query];
+	
+	filteredGnomes = [searchableArray filteredArrayUsingPredicate:resultPredicate];
+	self.searchResults = filteredGnomes;
 }
 @end

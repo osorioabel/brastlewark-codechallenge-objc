@@ -12,10 +12,11 @@
 #import <libextobjc/EXTScope.h>
 
 
-@interface GnomesListViewController () <UITableViewDelegate,UITableViewDataSource>
+@interface GnomesListViewController () <UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate>
 
 @property (nonatomic, strong, readonly) GnomesListViewModel *viewModel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) UISearchController *searchController;
 
 @end
 
@@ -36,21 +37,53 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self setupView];
+	[self bindViewModel];
+}
+
+#pragma mark - Internal helpers
+- (void)setupView{
+	self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:nil];
+	[self setupTableView];
+	[self setupSearchController];
+}
+
+- (void) setupTableView{
+	
 	[self.tableView registerNib:[UINib nibWithNibName:@"GnomeCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GnomeCell"];
 	self.tableView.delegate = self;
 	self.tableView.dataSource = self;
 	self.tableView.rowHeight = 263;
 	self.tableView.backgroundColor = [UIColor blackColor];
-	[self bindViewModel];
+}
+
+- (void)setupSearchController{
+	self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+	self.searchController.searchResultsUpdater = self;
+	self.searchController.dimsBackgroundDuringPresentation = NO;
+	self.searchController.hidesNavigationBarDuringPresentation = NO;
+	self.searchController.searchBar.placeholder = @"Search here...";
+	self.searchController.searchBar.delegate = self;
+	self.definesPresentationContext = YES;
+	[self.searchController.searchBar sizeToFit];
+	for ( UIView *v in [self.searchController.searchBar.subviews.firstObject subviews] )
+	{
+		if ( YES == [v isKindOfClass:[UITextField class]] )
+		{
+			[((UITextField*)v) setTintColor:[UIColor blackColor]];
+			break;
+		}
+	}
+	
+	self.navigationItem.titleView = self.searchController.searchBar;
+	
 }
 
 #pragma mark - Bindings
 
 - (void)bindViewModel {
 	
-	self.title = [self.viewModel title];
-	self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:nil];
-	
+
 	@weakify(self);
 	
 	[[self.viewModel.hasUpdatedContent
@@ -76,6 +109,30 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 	[self.viewModel showDetailOfGnome:[self.viewModel gnomeAtIndexPath:indexPath]];
+}
+
+#pragma mark - SearchController Related Methods
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+	if (![searchController.searchBar.text isEqualToString:@""]) {
+		self.viewModel.shouldDisplaySearchResults = YES;
+		[self.viewModel filterGnomesWithQuery:searchController.searchBar.text];
+		[self.tableView reloadData];
+	}
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+	if (!self.viewModel.shouldDisplaySearchResults) {
+		self.viewModel.shouldDisplaySearchResults = YES;
+		[self.tableView reloadData];
+	}
+	[self.searchController.searchBar resignFirstResponder];
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+	self.viewModel.shouldDisplaySearchResults = NO;
+	self.searchController.searchBar.text = @"";
+	[self.tableView reloadData];
 }
 
 @end

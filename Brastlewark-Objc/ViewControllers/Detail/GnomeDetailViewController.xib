@@ -33,13 +33,13 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="46" id="qQ9-Fa-lZe"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcf-fL-vVV">
-                    <rect key="frame" x="8" y="401" width="359" height="21.5"/>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                    <rect key="frame" x="8" y="401" width="359" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>

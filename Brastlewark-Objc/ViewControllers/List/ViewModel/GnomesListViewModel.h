@@ -21,11 +21,13 @@
 
 @property (nonatomic, readonly) RACSignal *hasUpdatedContent;
 @property (weak, nonatomic) id<GnomesListViewModelCoordinatorDelegate> delegate;
+@property (nonatomic, assign) BOOL shouldDisplaySearchResults;
 
 - (instancetype)initAndGetGnomes;
-- (NSString *)title;
+
 - (NSUInteger)numberOfGnomesInSection:(NSInteger)section;
 - (Gnome *)gnomeAtIndexPath:(NSIndexPath *)indexPath;
 - (void)showDetailOfGnome:(Gnome *)gnome;
+- (void)filterGnomesWithQuery:(NSString*)query;
 
 @end

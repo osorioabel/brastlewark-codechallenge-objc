@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="261"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="260.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jr9-7R-h2K">
@@ -26,8 +26,8 @@
                         <rect key="frame" x="0.0" y="210" width="320" height="50"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="301-PA-YS5">
-                                <rect key="frame" x="8" y="7" width="304" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <rect key="frame" x="8" y="10.5" width="304" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
