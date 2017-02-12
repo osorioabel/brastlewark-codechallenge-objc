@@ -8,6 +8,8 @@
 
 #import "GnomeDetailViewController.h"
 #import "GnomeDetailViewModel.h"
+#import "Brastlewark_Objc-Swift.h"
+
 @interface GnomeDetailViewController ()
 
 @property (nonatomic, strong, readonly) GnomeDetailViewModel *viewModel;
@@ -40,6 +42,9 @@
 	self.nameLabel.text = [self.viewModel name ];
 	[self.imageView sd_setImageWithURL:[self.viewModel thumbnail]];
 	self.descriptionLabel.text = [self.viewModel detail ];
+	self.imageView.userInteractionEnabled = YES;
+	ImagePinchGestureRecognizer *gesture = [[ImagePinchGestureRecognizer alloc] initWithTarget:self action:nil];
+	[self.imageView addGestureRecognizer:gesture];
 }
 
 @end

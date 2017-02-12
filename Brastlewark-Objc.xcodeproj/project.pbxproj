@@ -26,6 +26,7 @@
 		0D11F5191E4FFA8800C6AC1F /* GnomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F5171E4FFA8800C6AC1F /* GnomeDetailViewController.m */; };
 		0D11F51A1E4FFA8800C6AC1F /* GnomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D11F5181E4FFA8800C6AC1F /* GnomeDetailViewController.xib */; };
 		0D11F51E1E4FFB6E00C6AC1F /* GnomeDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F51D1E4FFB6E00C6AC1F /* GnomeDetailViewModel.m */; };
+		0DC8F7851E50ED32008C2164 /* ImagePinchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8F7841E50ED32008C2164 /* ImagePinchGestureRecognizer.swift */; };
 		9620A20E22561920ED175364 /* libPods-Brastlewark-Objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E5C1339CB8EC91840ACDCA /* libPods-Brastlewark-Objc.a */; };
 /* End PBXBuildFile section */
 
@@ -37,9 +38,9 @@
 		0D11F4C31E4F9CFF00C6AC1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D11F4C61E4F9CFF00C6AC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D11F4C81E4F9CFF00C6AC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D11F4D21E4FA84B00C6AC1F /* GnomesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GnomesListViewController.h; path = GnomesListViewController.h; sourceTree = "<group>"; };
-		0D11F4D31E4FA84B00C6AC1F /* GnomesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GnomesListViewController.m; path = GnomesListViewController.m; sourceTree = "<group>"; };
-		0D11F4D41E4FA84B00C6AC1F /* GnomesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GnomesListViewController.xib; path = GnomesListViewController.xib; sourceTree = "<group>"; };
+		0D11F4D21E4FA84B00C6AC1F /* GnomesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnomesListViewController.h; sourceTree = "<group>"; };
+		0D11F4D31E4FA84B00C6AC1F /* GnomesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnomesListViewController.m; sourceTree = "<group>"; };
+		0D11F4D41E4FA84B00C6AC1F /* GnomesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GnomesListViewController.xib; sourceTree = "<group>"; };
 		0D11F4D91E4FAA9C00C6AC1F /* AppCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCoordinator.h; sourceTree = "<group>"; };
 		0D11F4DA1E4FAA9C00C6AC1F /* AppCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCoordinator.m; sourceTree = "<group>"; };
 		0D11F4E31E4FBCB500C6AC1F /* Gnome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gnome.h; sourceTree = "<group>"; };
@@ -64,6 +65,8 @@
 		0D11F5181E4FFA8800C6AC1F /* GnomeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GnomeDetailViewController.xib; sourceTree = "<group>"; };
 		0D11F51C1E4FFB6E00C6AC1F /* GnomeDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnomeDetailViewModel.h; sourceTree = "<group>"; };
 		0D11F51D1E4FFB6E00C6AC1F /* GnomeDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnomeDetailViewModel.m; sourceTree = "<group>"; };
+		0DC8F7831E50ED31008C2164 /* Brastlewark-Objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brastlewark-Objc-Bridging-Header.h"; sourceTree = "<group>"; };
+		0DC8F7841E50ED32008C2164 /* ImagePinchGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePinchGestureRecognizer.swift; sourceTree = "<group>"; };
 		72951A4C2D50DF7C6B96DACA /* Pods-Brastlewark-Objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-Objc.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brastlewark-Objc/Pods-Brastlewark-Objc.release.xcconfig"; sourceTree = "<group>"; };
 		CD5236090F996D3D755177B0 /* Pods-Brastlewark-Objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-Objc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brastlewark-Objc/Pods-Brastlewark-Objc.debug.xcconfig"; sourceTree = "<group>"; };
 		E4E5C1339CB8EC91840ACDCA /* libPods-Brastlewark-Objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brastlewark-Objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,7 +123,6 @@
 				0D11F4C81E4F9CFF00C6AC1F /* Info.plist */,
 				0D11F4B81E4F9CFF00C6AC1F /* main.m */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -138,7 +140,6 @@
 			children = (
 				0D11F4D01E4F9DCB00C6AC1F /* Assets */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -166,7 +167,6 @@
 				0D11F4F51E4FC42E00C6AC1F /* GnomesListViewModel.h */,
 				0D11F4F61E4FC42E00C6AC1F /* GnomesListViewModel.m */,
 			);
-			name = ViewModel;
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
@@ -176,7 +176,6 @@
 				0D11F4D91E4FAA9C00C6AC1F /* AppCoordinator.h */,
 				0D11F4DA1E4FAA9C00C6AC1F /* AppCoordinator.m */,
 			);
-			name = Coordinator;
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
@@ -187,7 +186,6 @@
 				0D11F50C1E4FF0B700C6AC1F /* GnomeCell.m */,
 				0D11F50D1E4FF0B700C6AC1F /* GnomeCell.xib */,
 			);
-			name = "Related View";
 			path = "Related View";
 			sourceTree = "<group>";
 		};
@@ -198,7 +196,6 @@
 				0D11F4EA1E4FBE6700C6AC1F /* GnomesAPI.h */,
 				0D11F4EB1E4FBE6700C6AC1F /* GnomesAPI.m */,
 			);
-			name = API;
 			path = API;
 			sourceTree = "<group>";
 		};
@@ -208,7 +205,6 @@
 				0D11F4EE1E4FBE8B00C6AC1F /* GnomesNetworkingService.h */,
 				0D11F4EF1E4FBE8B00C6AC1F /* GnomesNetworkingService.m */,
 			);
-			name = Services;
 			path = Services;
 			sourceTree = "<group>";
 		};
@@ -219,19 +215,19 @@
 				0D11F4FA1E4FC65F00C6AC1F /* Helpers */,
 				0D11F4CF1E4F9DC300C6AC1F /* Resources */,
 			);
-			name = Utilities;
 			path = Utilities;
 			sourceTree = "<group>";
 		};
 		0D11F4F91E4FC65800C6AC1F /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				0DC8F7841E50ED32008C2164 /* ImagePinchGestureRecognizer.swift */,
 				0D11F5101E4FF85600C6AC1F /* NSArray+Random.h */,
 				0D11F5111E4FF85600C6AC1F /* NSArray+Random.m */,
 				0D11F4FE1E4FCFFA00C6AC1F /* NSURLSession+RAC.h */,
 				0D11F4FF1E4FCFFA00C6AC1F /* NSURLSession+RAC.m */,
+				0DC8F7831E50ED31008C2164 /* Brastlewark-Objc-Bridging-Header.h */,
 			);
-			name = Categories;
 			path = Categories;
 			sourceTree = "<group>";
 		};
@@ -241,7 +237,6 @@
 				0D11F4FB1E4FC67500C6AC1F /* Utils.h */,
 				0D11F4FC1E4FC67500C6AC1F /* Utils.m */,
 			);
-			name = Helpers;
 			path = Helpers;
 			sourceTree = "<group>";
 		};
@@ -254,7 +249,6 @@
 				0D11F4D31E4FA84B00C6AC1F /* GnomesListViewController.m */,
 				0D11F4D41E4FA84B00C6AC1F /* GnomesListViewController.xib */,
 			);
-			name = List;
 			path = List;
 			sourceTree = "<group>";
 		};
@@ -266,7 +260,6 @@
 				0D11F5171E4FFA8800C6AC1F /* GnomeDetailViewController.m */,
 				0D11F5181E4FFA8800C6AC1F /* GnomeDetailViewController.xib */,
 			);
-			name = Detail;
 			path = Detail;
 			sourceTree = "<group>";
 		};
@@ -276,7 +269,6 @@
 				0D11F51C1E4FFB6E00C6AC1F /* GnomeDetailViewModel.h */,
 				0D11F51D1E4FFB6E00C6AC1F /* GnomeDetailViewModel.m */,
 			);
-			name = ViewModel;
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
@@ -332,6 +324,7 @@
 					0D11F4B31E4F9CFF00C6AC1F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6FWWP4MAGN;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -428,6 +421,7 @@
 				0D11F4FD1E4FC67500C6AC1F /* Utils.m in Sources */,
 				0D11F51E1E4FFB6E00C6AC1F /* GnomeDetailViewModel.m in Sources */,
 				0D11F5121E4FF85600C6AC1F /* NSArray+Random.m in Sources */,
+				0DC8F7851E50ED32008C2164 /* ImagePinchGestureRecognizer.swift in Sources */,
 				0D11F4DB1E4FAA9C00C6AC1F /* AppCoordinator.m in Sources */,
 				0D11F4BC1E4F9CFF00C6AC1F /* AppDelegate.m in Sources */,
 				0D11F4EC1E4FBE6700C6AC1F /* GnomesAPI.m in Sources */,
@@ -547,11 +541,15 @@
 			baseConfigurationReference = CD5236090F996D3D755177B0 /* Pods-Brastlewark-Objc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6FWWP4MAGN;
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.osorioabel.Brastlewark-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brastlewark-Objc/Utilities/Categories/Brastlewark-Objc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -560,11 +558,14 @@
 			baseConfigurationReference = 72951A4C2D50DF7C6B96DACA /* Pods-Brastlewark-Objc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6FWWP4MAGN;
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.osorioabel.Brastlewark-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brastlewark-Objc/Utilities/Categories/Brastlewark-Objc-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

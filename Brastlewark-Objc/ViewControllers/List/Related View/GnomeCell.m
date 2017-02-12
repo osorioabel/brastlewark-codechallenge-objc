@@ -7,6 +7,8 @@
 //
 
 #import "GnomeCell.h"
+#import "Brastlewark_Objc-Swift.h"
+
 
 @implementation GnomeCell
 
@@ -16,6 +18,9 @@
     [super awakeFromNib];
     // Initialization code
 	self.selectionStyle = UITableViewCellSelectionStyleNone;
+	self.imageView.userInteractionEnabled = YES;
+	ImagePinchGestureRecognizer *gesture = [[ImagePinchGestureRecognizer alloc] initWithTarget:self action:nil];
+	[self.imageView addGestureRecognizer:gesture];
 }
 
 - (void)prepareForReuse{
