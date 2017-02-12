@@ -11,5 +11,12 @@
 
 @implementation Utils
 
++(void) customizingApp{
+	
+	[[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
+	[[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+														   [UIColor whiteColor],
+														   NSForegroundColorAttributeName, nil]];
+}
 
 @end

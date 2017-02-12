@@ -32,7 +32,7 @@
 			 @"gender": @"gender",
 			 @"weight": @"weight",
 			 @"height": @"height",
-			 @"hairColor": @"hairColor",
+			 @"hairColor": @"hair_color",
 			 @"profession": @"professions",
 			 @"friends": @"friends",
 			 };

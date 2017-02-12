@@ -1,24 +1,16 @@
 //
-//  GnomeTableViewCell.m
+//  GnomeCell.m
 //  Brastlewark-Objc
 //
 //  Created by Abel Osorio on 2/11/17.
 //  Copyright © 2017 Abel Osorio. All rights reserved.
 //
 
-#import "GnomeTableViewCell.h"
+#import "GnomeCell.h"
 
+@implementation GnomeCell
 
-@interface GnomeTableViewCell ()
-
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-
-@end
-
-@implementation GnomeTableViewCell
-
-@synthesize imageView,nameLabel;
+@synthesize nameLabel,imageView;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -26,10 +18,20 @@
 	self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
+- (void)prepareForReuse{
+	self.nameLabel.text = nil;
+	self.imageView.image = nil;
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void) updateWithGnome:(Gnome*) gnome{
+	self.nameLabel.text = gnome.name;
+	[self.imageView sd_setImageWithURL:gnome.thumbnail];
 }
 
 @end

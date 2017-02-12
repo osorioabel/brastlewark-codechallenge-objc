@@ -8,8 +8,9 @@
 
 #import "GnomesListViewController.h"
 #import "GnomesListViewModel.h"
-#import "GnomeTableViewCell.h"
+#import "GnomeCell.h"
 #import <libextobjc/EXTScope.h>
+
 
 @interface GnomesListViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -35,9 +36,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self.tableView registerNib:[UINib nibWithNibName:@"GnomeCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GnomeCell"];
 	self.tableView.delegate = self;
 	self.tableView.dataSource = self;
-	[self.tableView registerClass:GnomeTableViewCell.class forCellReuseIdentifier:@"GnomeTableViewCell"];
+	self.tableView.rowHeight = 263;
+	
 	[self bindViewModel];
 }
 
@@ -65,10 +68,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GnomeTableViewCell" forIndexPath:indexPath];
-	cell.textLabel.text = [self.viewModel fullNameAtIndexPath:indexPath];
+	GnomeCell *cell = (GnomeCell*) [tableView dequeueReusableCellWithIdentifier:@"GnomeCell" forIndexPath:indexPath];
+	[cell updateWithGnome: [self.viewModel gnomeAtIndexPath:indexPath]];
 	return cell;
 }
-
 
 @end

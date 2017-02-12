@@ -10,4 +10,6 @@
 
 @interface Utils : NSObject
 
++(void) customizingApp;
+
 @end
