@@ -144,7 +144,7 @@
 
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView
 {
-	NSString *text = self.viewModel.shouldDisplaySearchResults ? @"NO RESULTS" : @"";
+	NSString *text = self.viewModel.shouldDisplaySearchResults ? @"NO RESULTS FOUND" : @"";
 	
 	NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:24.0f],
 								 NSForegroundColorAttributeName: [UIColor whiteColor]};
