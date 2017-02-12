@@ -8,15 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "GnomesListViewModel.h"
 
 @protocol Coordinator
 
 @property (nonatomic,strong) UIViewController* rootViewcontroller;
+@property (nonatomic,strong) UINavigationController* navigationController;
 -(void)start;
 
 @end
 
-@interface AppCoordinator : NSObject <Coordinator>
+@interface AppCoordinator : NSObject <Coordinator,GnomesListViewModelCoordinatorDelegate>
 
 
 -(void)start;

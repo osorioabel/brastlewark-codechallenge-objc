@@ -22,6 +22,10 @@
 		0D11F5001E4FCFFA00C6AC1F /* NSURLSession+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4FF1E4FCFFA00C6AC1F /* NSURLSession+RAC.m */; };
 		0D11F50E1E4FF0B700C6AC1F /* GnomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F50C1E4FF0B700C6AC1F /* GnomeCell.m */; };
 		0D11F50F1E4FF0B700C6AC1F /* GnomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D11F50D1E4FF0B700C6AC1F /* GnomeCell.xib */; };
+		0D11F5121E4FF85600C6AC1F /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F5111E4FF85600C6AC1F /* NSArray+Random.m */; };
+		0D11F5191E4FFA8800C6AC1F /* GnomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F5171E4FFA8800C6AC1F /* GnomeDetailViewController.m */; };
+		0D11F51A1E4FFA8800C6AC1F /* GnomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D11F5181E4FFA8800C6AC1F /* GnomeDetailViewController.xib */; };
+		0D11F51E1E4FFB6E00C6AC1F /* GnomeDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F51D1E4FFB6E00C6AC1F /* GnomeDetailViewModel.m */; };
 		9620A20E22561920ED175364 /* libPods-Brastlewark-Objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E5C1339CB8EC91840ACDCA /* libPods-Brastlewark-Objc.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,13 @@
 		0D11F50B1E4FF0B700C6AC1F /* GnomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnomeCell.h; sourceTree = SOURCE_ROOT; };
 		0D11F50C1E4FF0B700C6AC1F /* GnomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnomeCell.m; sourceTree = SOURCE_ROOT; };
 		0D11F50D1E4FF0B700C6AC1F /* GnomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GnomeCell.xib; sourceTree = SOURCE_ROOT; };
+		0D11F5101E4FF85600C6AC1F /* NSArray+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Random.h"; sourceTree = "<group>"; };
+		0D11F5111E4FF85600C6AC1F /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
+		0D11F5161E4FFA8800C6AC1F /* GnomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnomeDetailViewController.h; sourceTree = SOURCE_ROOT; };
+		0D11F5171E4FFA8800C6AC1F /* GnomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnomeDetailViewController.m; sourceTree = SOURCE_ROOT; };
+		0D11F5181E4FFA8800C6AC1F /* GnomeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GnomeDetailViewController.xib; sourceTree = SOURCE_ROOT; };
+		0D11F51C1E4FFB6E00C6AC1F /* GnomeDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnomeDetailViewModel.h; sourceTree = SOURCE_ROOT; };
+		0D11F51D1E4FFB6E00C6AC1F /* GnomeDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnomeDetailViewModel.m; sourceTree = SOURCE_ROOT; };
 		72951A4C2D50DF7C6B96DACA /* Pods-Brastlewark-Objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-Objc.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brastlewark-Objc/Pods-Brastlewark-Objc.release.xcconfig"; sourceTree = "<group>"; };
 		CD5236090F996D3D755177B0 /* Pods-Brastlewark-Objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-Objc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brastlewark-Objc/Pods-Brastlewark-Objc.debug.xcconfig"; sourceTree = "<group>"; };
 		E4E5C1339CB8EC91840ACDCA /* libPods-Brastlewark-Objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brastlewark-Objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,11 +127,8 @@
 		0D11F4CE1E4F9DA400C6AC1F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0D11F4DD1E4FBC1C00C6AC1F /* Related View */,
-				0D11F4D71E4FA88400C6AC1F /* ViewModel */,
-				0D11F4D21E4FA84B00C6AC1F /* GnomesListViewController.h */,
-				0D11F4D31E4FA84B00C6AC1F /* GnomesListViewController.m */,
-				0D11F4D41E4FA84B00C6AC1F /* GnomesListViewController.xib */,
+				0D11F5151E4FFA1500C6AC1F /* Detail */,
+				0D11F5141E4FFA1100C6AC1F /* List */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -214,6 +222,8 @@
 			children = (
 				0D11F4FE1E4FCFFA00C6AC1F /* NSURLSession+RAC.h */,
 				0D11F4FF1E4FCFFA00C6AC1F /* NSURLSession+RAC.m */,
+				0D11F5101E4FF85600C6AC1F /* NSArray+Random.h */,
+				0D11F5111E4FF85600C6AC1F /* NSArray+Random.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -225,6 +235,38 @@
 				0D11F4FC1E4FC67500C6AC1F /* Utils.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		0D11F5141E4FFA1100C6AC1F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4DD1E4FBC1C00C6AC1F /* Related View */,
+				0D11F4D71E4FA88400C6AC1F /* ViewModel */,
+				0D11F4D21E4FA84B00C6AC1F /* GnomesListViewController.h */,
+				0D11F4D31E4FA84B00C6AC1F /* GnomesListViewController.m */,
+				0D11F4D41E4FA84B00C6AC1F /* GnomesListViewController.xib */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		0D11F5151E4FFA1500C6AC1F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F51B1E4FFA8F00C6AC1F /* ViewModel */,
+				0D11F5161E4FFA8800C6AC1F /* GnomeDetailViewController.h */,
+				0D11F5171E4FFA8800C6AC1F /* GnomeDetailViewController.m */,
+				0D11F5181E4FFA8800C6AC1F /* GnomeDetailViewController.xib */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		0D11F51B1E4FFA8F00C6AC1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F51C1E4FFB6E00C6AC1F /* GnomeDetailViewModel.h */,
+				0D11F51D1E4FFB6E00C6AC1F /* GnomeDetailViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		49410EA929CCC1E230DA48D3 /* Pods */ = {
@@ -307,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D11F50F1E4FF0B700C6AC1F /* GnomeCell.xib in Resources */,
+				0D11F51A1E4FFA8800C6AC1F /* GnomeDetailViewController.xib in Resources */,
 				0D11F4C71E4F9CFF00C6AC1F /* LaunchScreen.storyboard in Resources */,
 				0D11F4D61E4FA84B00C6AC1F /* GnomesListViewController.xib in Resources */,
 				0D11F4C41E4F9CFF00C6AC1F /* Assets.xcassets in Resources */,
@@ -368,9 +411,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D11F5191E4FFA8800C6AC1F /* GnomeDetailViewController.m in Sources */,
 				0D11F4E51E4FBCB500C6AC1F /* Gnome.m in Sources */,
 				0D11F50E1E4FF0B700C6AC1F /* GnomeCell.m in Sources */,
 				0D11F4FD1E4FC67500C6AC1F /* Utils.m in Sources */,
+				0D11F51E1E4FFB6E00C6AC1F /* GnomeDetailViewModel.m in Sources */,
+				0D11F5121E4FF85600C6AC1F /* NSArray+Random.m in Sources */,
 				0D11F4DB1E4FAA9C00C6AC1F /* AppCoordinator.m in Sources */,
 				0D11F4BC1E4F9CFF00C6AC1F /* AppDelegate.m in Sources */,
 				0D11F4EC1E4FBE6700C6AC1F /* GnomesAPI.m in Sources */,

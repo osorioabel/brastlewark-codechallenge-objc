@@ -49,6 +49,7 @@
 - (void)bindViewModel {
 	
 	self.title = [self.viewModel title];
+	self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:nil];
 	
 	@weakify(self);
 	
@@ -71,6 +72,10 @@
 	GnomeCell *cell = (GnomeCell*) [tableView dequeueReusableCellWithIdentifier:@"GnomeCell" forIndexPath:indexPath];
 	[cell updateWithGnome: [self.viewModel gnomeAtIndexPath:indexPath]];
 	return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+	[self.viewModel showDetailOfGnome:[self.viewModel gnomeAtIndexPath:indexPath]];
 }
 
 @end

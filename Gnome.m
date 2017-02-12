@@ -7,17 +7,14 @@
 //
 
 #import "Gnome.h"
-
+#import "NSArray+Random.h"
 
 @implementation Gnome
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionaryValue error:(NSError **)error {
 	self = [super initWithDictionary:dictionaryValue error:error];
 	if (self == nil) return nil;
-	
-	// Store a value that needs to be determined locally upon initialization.
-	//_retrievedAt = [NSDate date];
-	
+	self.gender = [@[@"Male",@"Female"] randomObject];
 	return self;
 }
 

@@ -16,7 +16,7 @@
 @property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, copy, readonly) NSURL *thumbnail;
 @property (nonatomic, copy, readonly) NSNumber *age;
-@property (nonatomic, copy, readonly) NSString *gender;
+@property (nonatomic, copy) NSString *gender;
 @property (nonatomic, assign,readonly) CGFloat weight;
 @property (nonatomic, assign,readonly) CGFloat height;
 @property (nonatomic, copy, readonly) NSString *hairColor;

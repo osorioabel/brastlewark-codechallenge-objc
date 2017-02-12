@@ -33,7 +33,7 @@
 }
 
 -(void)goToGnomeDetail:(Gnome*)gnome{
-	
+		
 }
 
 - (NSString *)title{
@@ -44,13 +44,11 @@
 	return self.gnomes.count;
 }
 
-- (NSString *)fullNameAtIndexPath:(NSIndexPath *)indexPath{
-	Gnome *gnome = [self gnomeAtIndexPath:indexPath];
-	return [NSString stringWithFormat:@"%@", gnome.name];
-}
-
 - (Gnome *)gnomeAtIndexPath:(NSIndexPath *)indexPath {
 	return self.gnomes[indexPath.row];
 }
 
+- (void)showDetailOfGnome:(Gnome *)gnome{
+	[self.delegate showDetailOfGnome:gnome];
+}
 @end
