@@ -1,4 +1,5 @@
 PODS:
+  - DZNEmptyDataSet (1.8.1)
   - libextobjc/EXTScope (0.4.1):
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4.1)
@@ -45,6 +46,7 @@ PODS:
   - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
+  - DZNEmptyDataSet
   - libextobjc/EXTScope
   - Mantle
   - MRProgress
@@ -52,12 +54,13 @@ DEPENDENCIES:
   - SDWebImage
 
 SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 6c4b53f76daabf9c299dd2c3b0bd2f5a60b42b49
+PODFILE CHECKSUM: 2095f7f4af67a4e84443685ffd85d7d5138e2f4e
 
 COCOAPODS: 1.2.0

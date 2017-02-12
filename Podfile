@@ -8,4 +8,5 @@ target 'Brastlewark-Objc' do
   pod 'Mantle'
   pod 'ReactiveCocoa', '2.5'
   pod 'libextobjc/EXTScope'
+  pod 'DZNEmptyDataSet'
 end

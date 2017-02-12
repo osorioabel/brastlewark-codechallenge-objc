@@ -10,9 +10,10 @@
 #import "GnomesListViewModel.h"
 #import "GnomeCell.h"
 #import <libextobjc/EXTScope.h>
+#import "UIScrollView+EmptyDataSet.h"
 
 
-@interface GnomesListViewController () <UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate>
+@interface GnomesListViewController () <UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchBarDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 
 @property (nonatomic, strong, readonly) GnomesListViewModel *viewModel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -55,6 +56,10 @@
 	self.tableView.dataSource = self;
 	self.tableView.rowHeight = 263;
 	self.tableView.backgroundColor = [UIColor blackColor];
+	self.tableView.emptyDataSetSource = self;
+	self.tableView.emptyDataSetDelegate = self;
+	self.tableView.tableFooterView = [UIView new];
+
 }
 
 - (void)setupSearchController{
@@ -133,6 +138,18 @@
 	self.viewModel.shouldDisplaySearchResults = NO;
 	self.searchController.searchBar.text = @"";
 	[self.tableView reloadData];
+}
+
+#pragma mark - EmptyStateDatasource
+
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView
+{
+	NSString *text = self.viewModel.shouldDisplaySearchResults ? @"NO RESULTS" : @"";
+	
+	NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18.0f],
+								 NSForegroundColorAttributeName: [UIColor whiteColor]};
+	
+	return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 }
 
 @end
