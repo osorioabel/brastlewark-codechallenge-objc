@@ -31,7 +31,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	self.title = [self.viewModel title ];
+	self.view.backgroundColor = [UIColor blackColor];
+	[self setupView ];
 }
 
 - (void)setupView{

@@ -17,6 +17,7 @@
 	[[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
 														   [UIColor whiteColor],
 														   NSForegroundColorAttributeName, nil]];
+	[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 }
 
 @end

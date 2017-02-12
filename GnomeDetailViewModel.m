@@ -26,16 +26,18 @@
 - (NSString *)name{
 	return [NSString stringWithFormat:@"%@",self.gnome.name];
 }
+- (NSString *)title{
+	return self.gnome.name;
+}
 - (NSString *)detail{
 	NSString *detail = @"";
-	detail = [NSString stringWithFormat:@"%@",self.gnome.name];
-	[detail stringByAppendingString: [self age]];
-	[detail stringByAppendingString: [self gender]];
-	[detail stringByAppendingString: [self weight]];
-	[detail stringByAppendingString: [self height]];
-	[detail stringByAppendingString: [self hairColor]];
-	[detail stringByAppendingString: [self friends]];
-	[detail stringByAppendingString: [self profession]];
+	detail = [NSString stringWithFormat:@"%@",[self age]];
+	detail = [detail stringByAppendingString: [self gender]];
+	detail = [detail stringByAppendingString: [self weight]];
+	detail = [detail stringByAppendingString: [self height]];
+	detail = [detail stringByAppendingString: [self hairColor]];
+	detail = [detail stringByAppendingString: [self friends]];
+	detail = [detail stringByAppendingString: [self profession]];
 	return detail;
 }
 - (NSURL *)thumbnail{
@@ -54,21 +56,13 @@
 	return [NSString stringWithFormat:@"\nWeight: %f",self.gnome.height];
 }
 - (NSString *)hairColor{
-	return [NSString stringWithFormat:@"\nHeight: %@",self.gnome.hairColor];
+	return [NSString stringWithFormat:@"\nHair Color: %@",self.gnome.hairColor];
 }
 - (NSString *)friends{
-	NSString *friendsString = @"";
-	for (NSString *string in self.gnome.friends) {
-		[friendsString stringByAppendingString:string];
-	}
-	return friendsString;
+	return [NSString stringWithFormat:@"\nFriends: %@",[self.gnome.friends componentsJoinedByString:@", "]];
 }
 - (NSString *)profession{
-	NSString *professionsString = @"";
-	for (NSString *string in self.gnome.profession) {
-		[professionsString stringByAppendingString:string];
-	}
-	return professionsString;
+	return [NSString stringWithFormat:@"\nProfession: %@",[self.gnome.profession componentsJoinedByString:@", "]];
 }
 
 @end

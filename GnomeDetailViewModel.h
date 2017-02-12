@@ -18,5 +18,6 @@
 - (NSString *)name;
 - (NSURL *)thumbnail;
 - (NSString *)detail;
+- (NSString *)title;
 
 @end
