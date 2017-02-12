@@ -8,4 +8,6 @@ target 'Brastlewark-Objc' do
   pod 'SDWebImage'
   pod 'Mantle'
   pod 'UIImage-Resize'
+  pod 'ReactiveCocoa', '2.5'
+  pod 'libextobjc/EXTScope'
 end

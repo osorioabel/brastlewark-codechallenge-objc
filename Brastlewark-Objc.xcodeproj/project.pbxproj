@@ -11,6 +11,18 @@
 		0D11F4BC1E4F9CFF00C6AC1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4BB1E4F9CFF00C6AC1F /* AppDelegate.m */; };
 		0D11F4C41E4F9CFF00C6AC1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D11F4C31E4F9CFF00C6AC1F /* Assets.xcassets */; };
 		0D11F4C71E4F9CFF00C6AC1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D11F4C51E4F9CFF00C6AC1F /* LaunchScreen.storyboard */; };
+		0D11F4D51E4FA84B00C6AC1F /* GnomesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4D31E4FA84B00C6AC1F /* GnomesListViewController.m */; };
+		0D11F4D61E4FA84B00C6AC1F /* GnomesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D11F4D41E4FA84B00C6AC1F /* GnomesListViewController.xib */; };
+		0D11F4DB1E4FAA9C00C6AC1F /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4DA1E4FAA9C00C6AC1F /* AppCoordinator.m */; };
+		0D11F4E11E4FBC6300C6AC1F /* GnomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4DF1E4FBC6300C6AC1F /* GnomeTableViewCell.m */; };
+		0D11F4E21E4FBC6300C6AC1F /* GnomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D11F4E01E4FBC6300C6AC1F /* GnomeTableViewCell.xib */; };
+		0D11F4E51E4FBCB500C6AC1F /* Gnome.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4E41E4FBCB500C6AC1F /* Gnome.m */; };
+		0D11F4EC1E4FBE6700C6AC1F /* GnomesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4EB1E4FBE6700C6AC1F /* GnomesAPI.m */; };
+		0D11F4F01E4FBE8B00C6AC1F /* GnomesNetworkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4EF1E4FBE8B00C6AC1F /* GnomesNetworkingService.m */; };
+		0D11F4F71E4FC42E00C6AC1F /* GnomesListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4F61E4FC42E00C6AC1F /* GnomesListViewModel.m */; };
+		0D11F4FD1E4FC67500C6AC1F /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4FC1E4FC67500C6AC1F /* Utils.m */; };
+		0D11F5001E4FCFFA00C6AC1F /* NSURLSession+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F4FF1E4FCFFA00C6AC1F /* NSURLSession+RAC.m */; };
+		0D11F5041E4FE16500C6AC1F /* GnomeCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F5031E4FE16500C6AC1F /* GnomeCellViewModel.m */; };
 		9620A20E22561920ED175364 /* libPods-Brastlewark-Objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E5C1339CB8EC91840ACDCA /* libPods-Brastlewark-Objc.a */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +34,28 @@
 		0D11F4C31E4F9CFF00C6AC1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D11F4C61E4F9CFF00C6AC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D11F4C81E4F9CFF00C6AC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D11F4D21E4FA84B00C6AC1F /* GnomesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GnomesListViewController.h; path = "Brastlewark-Objc/GnomesListViewController.h"; sourceTree = SOURCE_ROOT; };
+		0D11F4D31E4FA84B00C6AC1F /* GnomesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GnomesListViewController.m; path = "Brastlewark-Objc/GnomesListViewController.m"; sourceTree = SOURCE_ROOT; };
+		0D11F4D41E4FA84B00C6AC1F /* GnomesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GnomesListViewController.xib; path = "Brastlewark-Objc/GnomesListViewController.xib"; sourceTree = SOURCE_ROOT; };
+		0D11F4D91E4FAA9C00C6AC1F /* AppCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCoordinator.h; sourceTree = "<group>"; };
+		0D11F4DA1E4FAA9C00C6AC1F /* AppCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCoordinator.m; sourceTree = "<group>"; };
+		0D11F4DE1E4FBC6300C6AC1F /* GnomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnomeTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		0D11F4DF1E4FBC6300C6AC1F /* GnomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnomeTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		0D11F4E01E4FBC6300C6AC1F /* GnomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GnomeTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		0D11F4E31E4FBCB500C6AC1F /* Gnome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gnome.h; sourceTree = SOURCE_ROOT; };
+		0D11F4E41E4FBCB500C6AC1F /* Gnome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gnome.m; sourceTree = SOURCE_ROOT; };
+		0D11F4EA1E4FBE6700C6AC1F /* GnomesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnomesAPI.h; sourceTree = "<group>"; };
+		0D11F4EB1E4FBE6700C6AC1F /* GnomesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnomesAPI.m; sourceTree = "<group>"; };
+		0D11F4EE1E4FBE8B00C6AC1F /* GnomesNetworkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnomesNetworkingService.h; sourceTree = "<group>"; };
+		0D11F4EF1E4FBE8B00C6AC1F /* GnomesNetworkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnomesNetworkingService.m; sourceTree = "<group>"; };
+		0D11F4F51E4FC42E00C6AC1F /* GnomesListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnomesListViewModel.h; sourceTree = SOURCE_ROOT; };
+		0D11F4F61E4FC42E00C6AC1F /* GnomesListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnomesListViewModel.m; sourceTree = SOURCE_ROOT; };
+		0D11F4FB1E4FC67500C6AC1F /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		0D11F4FC1E4FC67500C6AC1F /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		0D11F4FE1E4FCFFA00C6AC1F /* NSURLSession+RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+RAC.h"; sourceTree = "<group>"; };
+		0D11F4FF1E4FCFFA00C6AC1F /* NSURLSession+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+RAC.m"; sourceTree = "<group>"; };
+		0D11F5021E4FE16500C6AC1F /* GnomeCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnomeCellViewModel.h; sourceTree = SOURCE_ROOT; };
+		0D11F5031E4FE16500C6AC1F /* GnomeCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnomeCellViewModel.m; sourceTree = SOURCE_ROOT; };
 		72951A4C2D50DF7C6B96DACA /* Pods-Brastlewark-Objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-Objc.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brastlewark-Objc/Pods-Brastlewark-Objc.release.xcconfig"; sourceTree = "<group>"; };
 		CD5236090F996D3D755177B0 /* Pods-Brastlewark-Objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-Objc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brastlewark-Objc/Pods-Brastlewark-Objc.debug.xcconfig"; sourceTree = "<group>"; };
 		E4E5C1339CB8EC91840ACDCA /* libPods-Brastlewark-Objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brastlewark-Objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,8 +95,10 @@
 		0D11F4B61E4F9CFF00C6AC1F /* Brastlewark-Objc */ = {
 			isa = PBXGroup;
 			children = (
+				0D11F4E61E4FBE4500C6AC1F /* API */,
+				0D11F4D81E4FAA5F00C6AC1F /* Coordinator */,
 				0D11F4D11E4F9DD700C6AC1F /* Models */,
-				0D11F4CF1E4F9DC300C6AC1F /* Resources */,
+				0D11F4F81E4FC62D00C6AC1F /* Utilities */,
 				0D11F4CE1E4F9DA400C6AC1F /* ViewControllers */,
 				0D11F4BA1E4F9CFF00C6AC1F /* AppDelegate.h */,
 				0D11F4BB1E4F9CFF00C6AC1F /* AppDelegate.m */,
@@ -83,6 +119,11 @@
 		0D11F4CE1E4F9DA400C6AC1F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0D11F4DD1E4FBC1C00C6AC1F /* Related View */,
+				0D11F4D71E4FA88400C6AC1F /* ViewModel */,
+				0D11F4D21E4FA84B00C6AC1F /* GnomesListViewController.h */,
+				0D11F4D31E4FA84B00C6AC1F /* GnomesListViewController.m */,
+				0D11F4D41E4FA84B00C6AC1F /* GnomesListViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -92,7 +133,7 @@
 			children = (
 				0D11F4D01E4F9DCB00C6AC1F /* Assets */,
 			);
-			path = Resources;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		0D11F4D01E4F9DCB00C6AC1F /* Assets */ = {
@@ -107,8 +148,96 @@
 		0D11F4D11E4F9DD700C6AC1F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0D11F4E31E4FBCB500C6AC1F /* Gnome.h */,
+				0D11F4E41E4FBCB500C6AC1F /* Gnome.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0D11F4D71E4FA88400C6AC1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4F51E4FC42E00C6AC1F /* GnomesListViewModel.h */,
+				0D11F4F61E4FC42E00C6AC1F /* GnomesListViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		0D11F4D81E4FAA5F00C6AC1F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4D91E4FAA9C00C6AC1F /* AppCoordinator.h */,
+				0D11F4DA1E4FAA9C00C6AC1F /* AppCoordinator.m */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		0D11F4DD1E4FBC1C00C6AC1F /* Related View */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F5011E4FE13900C6AC1F /* ViewModel */,
+				0D11F4DE1E4FBC6300C6AC1F /* GnomeTableViewCell.h */,
+				0D11F4DF1E4FBC6300C6AC1F /* GnomeTableViewCell.m */,
+				0D11F4E01E4FBC6300C6AC1F /* GnomeTableViewCell.xib */,
+			);
+			name = "Related View";
+			sourceTree = "<group>";
+		};
+		0D11F4E61E4FBE4500C6AC1F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4EA1E4FBE6700C6AC1F /* GnomesAPI.h */,
+				0D11F4EB1E4FBE6700C6AC1F /* GnomesAPI.m */,
+				0D11F4E81E4FBE5000C6AC1F /* Services */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		0D11F4E81E4FBE5000C6AC1F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4EE1E4FBE8B00C6AC1F /* GnomesNetworkingService.h */,
+				0D11F4EF1E4FBE8B00C6AC1F /* GnomesNetworkingService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		0D11F4F81E4FC62D00C6AC1F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4FA1E4FC65F00C6AC1F /* Helpers */,
+				0D11F4F91E4FC65800C6AC1F /* Categories */,
+				0D11F4CF1E4F9DC300C6AC1F /* Resources */,
+			);
+			name = Utilities;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0D11F4F91E4FC65800C6AC1F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4FE1E4FCFFA00C6AC1F /* NSURLSession+RAC.h */,
+				0D11F4FF1E4FCFFA00C6AC1F /* NSURLSession+RAC.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		0D11F4FA1E4FC65F00C6AC1F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F4FB1E4FC67500C6AC1F /* Utils.h */,
+				0D11F4FC1E4FC67500C6AC1F /* Utils.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		0D11F5011E4FE13900C6AC1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D11F5021E4FE16500C6AC1F /* GnomeCellViewModel.h */,
+				0D11F5031E4FE16500C6AC1F /* GnomeCellViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		49410EA929CCC1E230DA48D3 /* Pods */ = {
@@ -190,7 +319,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D11F4E21E4FBC6300C6AC1F /* GnomeTableViewCell.xib in Resources */,
 				0D11F4C71E4F9CFF00C6AC1F /* LaunchScreen.storyboard in Resources */,
+				0D11F4D61E4FA84B00C6AC1F /* GnomesListViewController.xib in Resources */,
 				0D11F4C41E4F9CFF00C6AC1F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +381,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D11F4E51E4FBCB500C6AC1F /* Gnome.m in Sources */,
+				0D11F4FD1E4FC67500C6AC1F /* Utils.m in Sources */,
+				0D11F4DB1E4FAA9C00C6AC1F /* AppCoordinator.m in Sources */,
 				0D11F4BC1E4F9CFF00C6AC1F /* AppDelegate.m in Sources */,
+				0D11F4EC1E4FBE6700C6AC1F /* GnomesAPI.m in Sources */,
+				0D11F4E11E4FBC6300C6AC1F /* GnomeTableViewCell.m in Sources */,
+				0D11F5001E4FCFFA00C6AC1F /* NSURLSession+RAC.m in Sources */,
+				0D11F4D51E4FA84B00C6AC1F /* GnomesListViewController.m in Sources */,
+				0D11F4F01E4FBE8B00C6AC1F /* GnomesNetworkingService.m in Sources */,
+				0D11F5041E4FE16500C6AC1F /* GnomeCellViewModel.m in Sources */,
+				0D11F4F71E4FC42E00C6AC1F /* GnomesListViewModel.m in Sources */,
 				0D11F4B91E4F9CFF00C6AC1F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
